@@ -3,15 +3,19 @@ var gameState = 0;
 var playerCount;
 var allPlayers;
 var distance = 0;
+var playerFlag = 1;
+var flag = 0;
+var flag1;
 var database;
 var form, player, game;
-var player1,player2,head;
-var player1_img,player2_img;
+var player1,player2,head,player3,player4;
+var player1_img,player2_img,player3_img,player4_img;
 function preload()
 {
- // track = loadImage("images/track.jpg")
-  player1_img = loadImage("images/player1.jpg");
-  player2_img = loadImage("images/player2.jpg");
+  player1_img = loadImage("images/runner1.png");
+  player2_img = loadImage("images/runner2.png");
+  player3_img = loadImage("images/runner3.png");
+  player4_img = loadImage("images/runner4.png");
 }
 function setup(){
   canvas = createCanvas(displayWidth-20, displayHeight-30);
